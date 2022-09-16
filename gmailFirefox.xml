@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="username" value="documentsapproved@gmail.com"/>
+    <parameter name="password" value="Ghbhjlf123"/>
+    <test name="Tests">
+        <classes>
+            <class name="testSuites.LoginTest">
+                <methods>
+                    <include name="login_suspiciousActivity"/>
+                    <include name="login_incorrectPassword_error"/>
+                    <include name="forgotPassword_incorrectName_error"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
